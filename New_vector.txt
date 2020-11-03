@@ -1,0 +1,10 @@
+#
+#This file describes
+#sparse vector
+#
+vector 10
+
+1 100
+4 23/5
+7 -5/3
+2 44/1

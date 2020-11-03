@@ -1,0 +1,30 @@
+declare:
+    #
+    # Описания матричных переменных
+    #
+    matrix: a,b, E, c("New_matrix.txt"),
+            D("New_\"matrix\".txt");
+
+    vector: v1,v2, m ("New_vector.txt");
+
+    rational:
+        number1(1), number2(-10 / 3), number3, r;
+
+    /*
+     * представлять как double в программе
+    */
+    float: f(0.99999999);
+    integer: i,j,k(10);
+
+process:
+    a=(b+c info("сложили\n") ) * (E = D ^ number2) :rotate ;
+    m=v1:rotate * v2;
+    r=m[1,2];
+
+    info("всем привет\n");
+
+    r: write("лес.txt");
+
+    number1=r;
+
+    E: print; E: write("hz.txt");
